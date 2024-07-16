@@ -9,7 +9,10 @@ df=pd.DataFrame({
     'day':[1,3,4]
 }, index=dt)
 
-print(type(df))
+df["minuevafecha"]=pd.to_datetime(df[["year","month","day"]])
+
+print(df)
+
 
 
 
